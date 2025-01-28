@@ -20,5 +20,7 @@ Transactions below $50 earn no points. The calculated points are added to the cu
 API Endpoints: The RewardController class exposes the following API endpoints:
 
 /api/rewards/transactions: This endpoint accepts a POST request with a JSON representation of a transaction object in the request body. The controller calls the processTransaction method in the RewardService to record the transaction.
+
 /api/rewards/customers/{customerId}: This endpoint accepts a GET request with a customer ID path variable. The controller calls the getCustomer method in the RewardService to retrieve the customer information.
+
 /api/rewards/customers/{customerId}/months/{month}: This endpoint accepts a GET request with a customer ID and month path variables. The controller calls the getMonthlyPoints method in the RewardService to retrieve the customer's points for the specified month.
