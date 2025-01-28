@@ -10,6 +10,13 @@ public class Transaction {
 	private BigDecimal amount;
     private LocalDate transactionDate;
 
+	public Transaction(String customerId, BigDecimal amount) {
+		super();
+		this.customerId = customerId;
+		this.amount = amount;
+		
+	}
+	
     public String getCustomerId() {
 		return customerId;
 	}
